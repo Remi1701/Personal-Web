@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta charset="utf-8">
+        <title>My Achievement</title>
+        <link rel="stylesheet" href="css/achievement.css">
+        <link rel="shortcut icon" href="img/iconlink.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <ul>
+            <li style="--i:#a955ff;--j:#ea51ff;">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="title"><a href="index.html">Home</a></span>
+            </li>
+            <li style="--i:#56CCF2;--j:#2F80ED;">
+                <span class="icon"><ion-icon name="information-circle-outline"></ion-icon></span>
+                <span class="title"><a href="about.html">About</a></span>
+            </li>
+            <li style="--i:#FF9966;--j:#FF5E62;">
+                <span class="icon"><ion-icon name="medal-outline"></ion-icon></span>
+                <span class="title"><a href="achievement.html">Achievement</a></span>
+            </li>
+            <li style="--i:#80FF72;--j:#7EE8FA;">
+                <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+                <span class="title"><a href="contact.html">Contact</a></span>
+            </li>
+        </ul>
+        <div class="slider">
+            <h2>Portfolio</h2>
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <div class="slide first">
+                    <img src="img/pf1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/pf2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/pf3.png" alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+        <footer class="copyright">
+            <li>Copyright 2022 &copy; Rassel Muhammad Indra</li>
+        </footer>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 3){
+                    counter = 1;
+                }
+            }, 3000);
+        </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
